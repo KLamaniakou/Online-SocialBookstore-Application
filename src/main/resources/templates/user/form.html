@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff; }
+        .container-fluid {
+            padding: 10px;
+            border-bottom: 2px solid #444; }
+        .container-fluid2 {
+            padding: 200px;}
+        h1, h2, h3 {
+            color: #61dafb;}
+        .btn-primary {
+            background-color: black;
+            border-color: #61dafb; }
+        .btn-danger {
+            background-color: black;
+            border-color: #61dafb; }
+        .btn-primary:hover {
+            background-color: black;
+            border-color: #45a8d8;  }
+        .btn-secondary {
+            background-color: #383838;
+            border-color: #383838;  }
+        .btn-secondary:hover {
+            background-color: black;
+            border-color: #282828; }
+        .btn-lg {
+            font-size: 30px;
+            padding: 20px 80px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Profile Form</h2>
+    <form
+            action="@{/saveProfile}" th:action="@{/saveProfile}" th:object="${userprofile}" method="post">
+        <input type="text" th:field="*{fullName}" placeholder="Full_Name" /> <br/><br/>
+        <input type="text" th:field="*{address}" placeholder="Address" /> <br/><br/>
+        <input type="number" th:field="*{age}" placeholder="Age" /> <br/><br/>
+        <input type="text" th:field="*{phoneNumber}" placeholder="Phone_Number" /> <br/><br/>
+        <h2>Favorite Categories</h2>
+        <label for="categories">Select your favorite categories:</label><br>
+        <select id="categories" th:field="*{category}" placeholder="Category" multiple>
+            <option value="Art">Art</option>
+            <option value="Comic">Comic</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Biographies">Biographies</option>
+            <option value="History">History</option>
+            <option value="Science">Science</option>
+            <option value="Literature">Literature</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Crime">Crime</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <h2>Favorite Author</h2>
+        <input type="text" th:field="*{author}" placeholder="Author"><br><br>
+
+        <button type="submit" class="btn btn-info col-2">Submit</button>
+        <a th:href="@{/user/profile}" class="btn btn-info col-2"> Back</a>
+
+        <div th:utext="${successMessage}"></div>
+    </form>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
