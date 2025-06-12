@@ -37,10 +37,6 @@ just run throw a modern compailer
 
 Contributions are welcome! Please follow the guidelines outlined in [CONTRIBUTING.md](link-to-contributing.md) for contributing to this project.
 
-## Demo Images
-
-- Authentication page - Displays the login/registration ![Screenshot 2024-05-19 195450.png](..%2F..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-19%20195450.png)
-  <br>
-
+## Demo Image
 - Book Dashboard page - A list of owned books and functions that a user can do ![](img_1.png)
   <br>
