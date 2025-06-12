@@ -42,5 +42,5 @@ Contributions are welcome! Please follow the guidelines outlined in [CONTRIBUTIN
 - Authentication page - Displays the login/registration ![Screenshot 2024-05-19 195450.png](..%2F..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-19%20195450.png)
   <br>
 
-- Book Dashboard page - A list of owned books and functions that a user can do ![Screenshot 2024-05-19 195705.png](..%2F..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-19%20195705.png)
+- Book Dashboard page - A list of owned books and functions that a user can do ![](img_1.png)
   <br>
